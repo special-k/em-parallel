@@ -89,7 +89,18 @@ EM.run{
     p '333'
   }
 
+  #non stop
+
 }
+#pretty parallel ^_^
+"aaa"
+"111"
+"bbb2"
+"222a"
+"222b"
+"333"
+"bbb1"
+"ccc"
 ```
 
 ```ruby
@@ -134,6 +145,7 @@ EM.run{
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
 ## TODO
+* Probably I think about clean beautiful framework for doing stuff like this.
 * tests
 
 ## Copyright
