@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "em-parallel"
   gem.homepage = "http://github.com/special-k/em-parallel"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{combining of parallel and successive operations}
+  gem.description = %Q{EM and Fiber based DSL for combining of parallel and successive operations}
   gem.email = "special-k@li.ru"
   gem.authors = ["Kirill Jakovlev"]
   # dependencies defined in Gemfile
