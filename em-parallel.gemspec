@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/special-k/em-parallel"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "3.0.7"
+  s.rubygems_version = "2.0.7"
   s.summary = "combining of parallel and successive operations"
   s.add_dependency "eventmachine"
   s.add_dependency "em-synchrony"
