@@ -2,6 +2,9 @@ source "https://rubygems.org"
 
 gem "eventmachine"
 gem "em-synchrony"
+gem "em-http-request"
+gem 'faye-websocket'
+gem "msgpack"
 
 group :development do
   gem "rspec", "~> 2.8.0"

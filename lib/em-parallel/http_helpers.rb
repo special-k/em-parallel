@@ -1,3 +1,6 @@
+require "em-synchrony/em-http"
+require "em-http-request"
+
 def response url
   EventMachine::HttpRequest.new(url).get.response
 end
