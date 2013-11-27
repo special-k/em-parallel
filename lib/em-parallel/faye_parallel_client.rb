@@ -13,7 +13,8 @@ class FayeParallelClient
 
     @ws.on :message do |event|
       #data = Yajl::Parser.parse( event.data )
-      data = MessagePack.unpack event.data.pack PACK_KEY
+      data = Marshal.load event.data.pack PACK_KEY
+      #data = MessagePack.unpack event.data.pack PACK_KEY
       k = data[0]
       if  @fibers.include? k
         @fibers.delete(k).resume data[1]
@@ -35,7 +36,8 @@ class FayeParallelClient
     fiber = Fiber.current
     @fibers[k] = fiber
     #@ws.send Yajl::Encoder.encode([k,v])
-    @ws.send MessagePack.dump([k,v]).bytes
+    @ws.send Marshal.dump([k,v]).bytes
+    #@ws.send MessagePack.dump([k,v]).bytes
     Fiber.yield
   end
 end

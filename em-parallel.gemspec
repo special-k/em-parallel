@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.add_dependency "em-synchrony"
   s.add_dependency "em-http-request"
   s.add_dependency "faye-websocket"
-  s.add_dependency "msgpack"
+  #s.add_dependency "msgpack"
   s.add_development_dependency "rspec", "~> 2.8.0"
   s.add_development_dependency "yard", "~> 0.7"
   s.add_development_dependency "rdoc", "~> 3.12"
